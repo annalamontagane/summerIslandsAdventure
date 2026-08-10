@@ -122,7 +122,7 @@
   }
 
   .ocean{
-    position:relative; height:400px; border-radius:6px; overflow:hidden;
+    position:relative; height:350px; border-radius:6px; overflow:hidden;
     margin-bottom:28px; background:#1c414d;
   }
   .ocean img, .ocean video{ position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
