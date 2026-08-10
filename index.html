@@ -1,473 +1,529 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>summerIslandAdventure</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>summerIslandAdventure</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
-  <!-- STAGE 1 -->
-  <div id="stage1" role="button" tabindex="0" aria-label="Open summerIslandAdventure folder">
-    <div class="folder-wrap">
-      <div class="folder-icon" id="srcFolderIcon">
-        <img src="assets/Group64.svg" alt="summerIslandAdventure folder">
-      </div>
-      <div class="folder-label">summerIslandAdventure</div>
+    <!-- STAGE 1 -->
+    <div id="stage1" role="button" tabindex="0" aria-label="Open summerIslandAdventure folder">
+        <div class="folder-wrap">
+            <div class="folder-icon" id="srcFolderIcon">
+                <img src="assets/Group64.svg" alt="summerIslandAdventure folder">
+            </div>
+            <div class="folder-label">summerIslandAdventure</div>
+        </div>
     </div>
-  </div>
 
-  <!-- STAGE 2 -->
-  <div id="stage2" aria-hidden="true">
+    <!-- STAGE 2 -->
+    <div id="stage2" aria-hidden="true">
 
-    <nav class="nav">
-      <button class="nav-folder" id="navFolderBtn" title="Close / back to folder">
-        <span class="folder-icon" id="navFolderIcon"><img src="assets/Group64.svg" alt=""></span>
-        <span class="nav-folder-label">summerIsland<br>Adventure</span>
-      </button>
+        <nav class="nav">
+            <button class="nav-folder" id="navFolderBtn" title="Close / back to folder">
+                <span class="folder-icon" id="navFolderIcon"><img src="assets/Group64.svg" alt=""></span>
+                <span class="nav-folder-label">summerIsland<br>Adventure</span>
+            </button>
 
-      <div class="nav-group">
-        <div class="nav-eyebrow">Jump to</div>
-        <button class="nav-link" data-jump="section-links">Links</button>
-        <button class="nav-link" data-jump="section-itinerary">Itinerary</button>
-        <div class="nav-days">
-          <button class="nav-day-link" data-jump="day-1">Aug 11 <span class="night-tag">Hiking</span></button>
-          <button class="nav-day-link" data-jump="day-2">Aug 12 <span class="night-tag">Hiking</span></button>
-          <button class="nav-day-link" data-jump="day-3">Aug 13 <span class="night-tag">Victoria</span></button>
-          <button class="nav-day-link" data-jump="day-4">Aug 14 <span class="night-tag">Pender</span></button>
-          <button class="nav-day-link" data-jump="day-5">Aug 15 <span class="night-tag">Pender</span></button>
-          <button class="nav-day-link" data-jump="day-6">Aug 16 <span class="night-tag">Return</span></button>
+            <div class="nav-group">
+                <div class="nav-eyebrow">Jump to</div>
+                <button class="nav-link" data-jump="section-links">Links</button>
+                <button class="nav-link" data-jump="section-itinerary">Itinerary</button>
+                <div class="nav-days">
+                    <button class="nav-day-link" data-jump="day-1">Aug 11 <span class="night-tag">Hiking</span></button>
+                    <button class="nav-day-link" data-jump="day-2">Aug 12 <span class="night-tag">Hiking</span></button>
+                    <button class="nav-day-link" data-jump="day-3">Aug 13 <span
+                            class="night-tag">Victoria</span></button>
+                    <button class="nav-day-link" data-jump="day-4">Aug 14 <span class="night-tag">Pender</span></button>
+                    <button class="nav-day-link" data-jump="day-5">Aug 15 <span class="night-tag">Pender</span></button>
+                    <button class="nav-day-link" data-jump="day-6">Aug 16 <span class="night-tag">Return</span></button>
+                </div>
+                <button class="nav-link" data-jump="section-campsites">Campsites</button>
+                <button class="nav-link" data-jump="section-packing">Packing List</button>
+            </div>
+        </nav>
+
+        <div class="scroll-area">
+
+            <h1 class="page-title">summerIslandAdventure</h1>
+            <p class="page-sub">Aug 11–16, 2026</p>
+
+            <div class="ocean">
+                <video autoplay loop muted playsinline>
+                    <source src="assets/C0060.MP4" type="video/mp4">
+                </video>
+            </div>
+
+            <!-- LINKS -->
+            <section id="section-links">
+                <h2 class="section-title">Links</h2>
+                <div class="links-grid">
+                    <div>
+                        <h3>Ferry Details</h3>
+                        <ul>
+                            <li><a href="https://www.bcferries.com/current-conditions/TSA-SWB" target="_blank">Current
+                                    conditions</a></li>
+                            <li><a href="https://www.bcferries.com/routes-fares/schedules/daily/TSA-SWB"
+                                    target="_blank">Schedule: Tsaw → Swartz</a></li>
+                            <li><a href="https://www.bcferries.com/routes-fares/schedules/daily/SWB-TSA"
+                                    target="_blank">Schedule: Swartz → Tsaw</a></li>
+                            <li><a href="https://www.bcferries.com/routes-fares/schedules/daily/SWB-POB"
+                                    target="_blank">Schedule: Swartz → Pender</a></li>
+                            <li><a href="https://www.bcferries.com/routes-fares/schedules" target="_blank">Schedule:
+                                    Pender → Tsaw</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Trail Details</h3>
+                        <ul>
+                            <li><a href="https://spotwx.com/products/grib_index.php?model=gfs_pgrb2_0p25_f&lat=48.557&lon=-124.405&tz=America/Vancouver"
+                                    target="_blank">Weather — Port Renfrew</a></li>
+                            <li><a href="https://www.tides.gc.ca/en/stations/8525" target="_blank">Tides — Port
+                                    Renfrew</a></li>
+                            <li><a href="https://www.alltrails.com/trail/canada/british-columbia/juan-de-fuca-park"
+                                    target="_blank">Trail sections - All Trails</a></li>
+                            <li><a href="https://bcparks.ca/juan-de-fuca-park/" target="_blank">BC Parks overview</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="links-grid">
+                    <div class="resources">
+                        <h3>Additional Resources</h3>
+                        <ul>
+                            <li><a href="https://spotwx.com/products/grib_index.php?model=gfs_pgrb2_0p25_f&lat=48.78&lon=-123.31&tz=America/Vancouver"
+                                    target="_blank">Weather - Pender Island</a></li>
+                        </ul>
+                    </div>
+                    <div class="resources">
+                        <h3>Things to Print</h3>
+                        <ul>
+                            <li><a href="https://www.tides.gc.ca/en/stations/8525" target="_blank">Tide table (Port
+                                    Renfrew)</a></li>
+                            <li><a href="https://nrs.objectstore.gov.bc.ca/kuwyyf/juan_de_fuca_brochure_acb8364968.pdf"
+                                    target="_blank">Trail map</a></li>
+                            <li>Backcountry camping permit confirmation</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ITINERARY -->
+            <section id="section-itinerary">
+                <h2 class="section-title">Itinerary</h2>
+
+                <div class="day-block" id="day-1">
+                    <h3 class="day-head"><span class="label">Day 1</span><span class="leader"></span><span
+                            class="date">Aug 11</span></h3>
+                    <div class="day-meta">
+                        <span><b>Weather:</b> Cloudy, 30% chance of showers. High 18°C / Low 13°C <span
+                                style="color:var(--blue-light)"></span></span>
+                        <span><b>Sunrise:</b> 6:02</span>
+                        <span><b>Sunset:</b> 20:40</span>
+                        <span><b>Low tide:</b> 06:44 (0.18m)</span>
+                        <span><b>High tide:</b> 13:17 (2.40m)</span>
+                        <span style="color:var(--blue-light)">Port Renfrew station</span>
+                    </div>
+                    <ul class="timeline">
+                        <li><span class="t">5:00</span><span class="d">Wake up @ Anna's</span></li>
+                        <li><span class="t">5:50</span><span class="d">Uber to ferry</span></li>
+                        <li><span class="t">6:30</span><span class="d">Arrival at Tsawwassen terminal</span></li>
+                        <li><span class="t">7:00</span><span class="d">Ferry to Swartz Bay — <a
+                                    href="https://www.bcferries.com/routes-fares/schedules/daily/TSA-SWB"
+                                    target="_blank">sailing schedule</a> / <a
+                                    href="https://www.bcferries.com/current-conditions/TSA-SWB" target="_blank">current
+                                    conditions</a></span></li>
+                        <li><span class="t">8:35</span><span class="d">Arrival in Swartz Bay</span></li>
+                        <li><span class="t">9:00</span><span class="d">Start drive to trailhead — <a
+                                    href="https://www.google.com/maps/dir/Swartz+Bay+Ferry+Terminal/Botanical+Beach+Provincial+Park,+Port+Renfrew,+BC"
+                                    target="_blank">directions</a></span></li>
+                        <li><span class="t">11:30</span><span class="d">Arrive Botanical Beach trailhead</span></li>
+                        <li><span class="t">11:35</span><span class="d">Eat Lunch & Tidepooling</span></li>
+                        <li><span class="t">12:30</span><span class="d">Start hike — <a
+                                    href="https://www.alltrails.com/trail/canada/british-columbia/juan-de-fuca-marine-trail-sombrio-beach-to-botanical-beach"
+                                    target="_blank">trail section map</a></span></li>
+                        <li><span class="t">19:00</span><span class="d">Sombrio Beach (East) arrival</span></li>
+                        <li><span class="t">20:00</span><span class="d">Yummy food & sunset</span></li>
+                    </ul>
+                    <p class="note">19 km · biggest single climb on the trail is on this stretch (Sombrio Point / Loss
+                        Creek). No tide restrictions today.</p>
+                    <span class="trail-map-slot"><img src="assets/Group 68.svg" alt=""></span>
+                </div>
+
+                <div class="day-block" id="day-2">
+                    <h3 class="day-head"><span class="label">Day 2</span><span class="leader"></span><span
+                            class="date">Aug 12</span></h3>
+                    <div class="day-meta">
+                        <span><b>Weather:</b> Sunny. High 19°C / Low 12°C <span
+                                style="color:var(--blue-light)"></span></span>
+                        <span><b>Sunrise:</b> 6:03</span>
+                        <span><b>Sunset:</b> 20:38</span>
+                        <span><b>Low tide:</b> 07:27 (0.25m)</span>
+                        <span><b>High tide:</b> 13:54 (2.54m)</span>
+                        <span style="color:var(--blue-light)">Port Renfrew station</span>
+                    </div>
+                    <ul class="timeline">
+                        <li><span class="t">7:15</span><span class="d">Wake up, breakfast, pack up</span></li>
+                        <li><span class="t">8:15</span><span class="d">Leave Sombrio Beach — <a
+                                    href="https://www.alltrails.com/trail/canada/british-columbia/juan-de-fuca-marine-trail-chin-beach-to-sombrio-beach"
+                                    target="_blank">trail section pt 1</a> / <a
+                                    href="https://www.alltrails.com/trail/canada/british-columbia/juan-de-fuca-marine-trail-bear-beach-to-chin-beach"
+                                    target="_blank">trail section pt 2</a></span></li>
+                        <li><span class="t">~11:15</span><span class="d">Pass Chin Beach tide crossings (km 21.3 / 20.6)
+                                — <a href="https://www.tides.gc.ca/en/stations/8525" target="_blank">tide
+                                    table</a></span></li>
+                        <li><span class="t">17:00</span><span class="d">Arrive Bear Beach camp </span></li>
+                        <li><span class="t">18:15</span><span class="d">Dinner & sunset at Bear Beach</span></li>
+                    </ul>
+                    <p class="note">18.4 km · hardest day, ~750m cumulative gain. Tide cutoffs (2.75m) clear comfortably
+                        all day this week — no tide reason to start earlier than this.</p>
+                    <span class="trail-map-slot"><img src="assets/Group 67.svg" alt=""></span>
+                </div>
+
+                <div class="day-block" id="day-3">
+                    <h3 class="day-head"><span class="label">Day 3</span><span class="leader"></span><span
+                            class="date">Aug 13</span></h3>
+                    <div class="day-meta">
+                        <span><b>Weather:</b> Sunny. High 19°C / Low 13°C <span
+                                style="color:var(--blue-light)"></span></span>
+                        <span><b>Sunrise:</b> 6:04</span>
+                        <span><b>Sunset:</b> 20:36</span>
+                        <span><b>Low tide:</b> ~08:10 (est.)</span>
+                        <span><b>High tide:</b> ~14:30 (est.)</span>
+                        <span style="color:var(--blue-light)">Port Renfrew station</span>
+                    </div>
+                    <ul class="timeline">
+                        <li><span class="t">7:30</span><span class="d">Wake up, pack up</span></li>
+                        <li><span class="t">8:00</span><span class="d">Leave Bear Beach camp — <a
+                                    href="https://www.alltrails.com/trail/canada/british-columbia/juan-de-fuca-marine-trail-mystic-beach-to-bear-beach"
+                                    target="_blank">trail section map</a></span></li>
+                        <li><span class="t">~11:00</span><span class="d">Finish at China Beach trailhead — <a
+                                    href="https://www.google.com/maps/search/China+Beach+Trailhead,+BC"
+                                    target="_blank">map</a></span></li>
+                        <li><span class="t">Afternoon</span><span class="d">Explore anna's childhood city</span></li>
+                        <li><span class="t">Evening</span><span class="d">Sleep at moms</span></li>
+                    </ul>
+                    <p class="note">9.6 km · easiest day of the three, Bear Beach cutoff (3.00m) is the highest on the
+                        trail.</p>
+                    <div class="day-meta" style="margin-top:10px;"> </div>
+                    <span class="trail-map-slot"><img src="assets/Group 69.svg" alt=""></span>
+                </div>
+
+                <div class="day-block" id="day-4">
+                    <h3 class="day-head"><span class="label">Day 4</span><span class="leader"></span><span
+                            class="date">Aug 14</span></h3>
+                    <div class="day-meta">
+                        <span><b>Weather:</b> Mix of sun & cloud. High 25°C / Low 13°C <span
+                                style="color:var(--blue-light)">(Environment Canada — Gulf Islands)</span></span>
+                        <span><b>Sunrise:</b> 6:05</span>
+                        <span><b>Sunset:</b> 20:33</span>
+                        <span><b>Low tide:</b> ~12:30 (est.)</span>
+                        <span><b>High tide:</b> ~19:50 (est.)</span>
+                        <span style="color:var(--blue-light)">Fulford Harbour station</span>
+                    </div>
+                    <ul class="timeline">
+                        <li><span class="t">~07:00</span><span class="d">Leave from moms to Swartz Bay — <a
+                                    href="https://www.google.com/maps/dir/Goldstream+Provincial+Park,+BC/Swartz+Bay+Ferry+Terminal"
+                                    target="_blank">directions</a></span></li>
+                        <li><span class="t">08:20</span><span class="d">ferry, Swartz Bay → Pender Island — <a
+                                    href="https://www.bcferries.com/routes-fares/schedules/daily/SWB-POB"
+                                    target="_blank">sailing schedule</a> / <a
+                                    href="https://www.bcferries.com/current-conditions/SWB-POB" target="_blank">current
+                                    conditions</a></span></li>
+                        <li><span class="t">9:20</span><span class="d">Arrive Pender Island, settle in</span></li>
+                    </ul>
+                    <p class="note">*14:35 sailing also available if the morning doesn't work out.</p>
+                </div>
+
+                <div class="day-block" id="day-5">
+                    <h3 class="day-head"><span class="label">Day 5</span><span class="leader"></span><span
+                            class="date">Aug 15</span></h3>
+                    <div class="day-meta">
+                        <span><b>Weather:</b> Mix of sun & cloud. High 25°C / Low N/A <span
+                                style="color:var(--blue-light)">(Environment Canada — Gulf Islands, night low not yet in
+                                range)</span></span>
+                        <span><b>Sunrise:</b> 6:06</span>
+                        <span><b>Sunset:</b> 20:31</span>
+                        <span><b>Low tide:</b> ~13:10 (est.)</span>
+                        <span><b>High tide:</b> ~20:10 (est.)</span>
+                        <span style="color:var(--blue-light)">Fulford Harbour station</span>
+                    </div>
+                    <ul class="timeline">
+                        <li><span class="t">Open</span><span class="d">Day on Pender Island</span></li>
+                    </ul>
+                </div>
+
+                <div class="day-block" id="day-6">
+                    <h3 class="day-head"><span class="label">Day 6</span><span class="leader"></span><span
+                            class="date">Aug 16</span></h3>
+                    <div class="day-meta">
+                        <span><b>Weather:</b> outside reliable forecast window</span>
+                        <span><b>Sunrise:</b> 6:08</span>
+                        <span><b>Sunset:</b> 20:28</span>
+                        <span><b>Low tide:</b> ~13:50 (est.)</span>
+                        <span><b>High tide:</b> ~20:30 (est.)</span>
+                        <span style="color:var(--blue-light)">Fulford Harbour station</span>
+                    </div>
+                    <ul class="timeline">
+                        <li><span class="t">3:05</span><span class="d">— OR — <span class="t"
+                                    style="min-width:auto;">8:00</span> return ferry, Pender Island → Tsawwassen — <a
+                                    href="https://www.bcferries.com/routes-fares/schedules" target="_blank">sailing
+                                    schedule</a></span></li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- CAMPSITES -->
+            <section id="section-campsites">
+                <h2 class="section-title">Campsites</h2>
+
+                <div class="pack-section">
+                    <h3>Sombrio Beach (East) — Night 1</h3>
+                    <h4 class="sub">What's there</h4>
+                    <ul class="plain-list">
+                        <li>Bear-resistant food cache</li>
+                        <li>Pit toilet</li>
+                        <li>Tent pads</li>
+                        <li>Creek water source (filter first)</li>
+                    </ul>
+                    <p class="note">Long classic beach with lots of tent spots. A short walk east along the beach leads
+                        to a hidden waterfall!</p>
+                </div>
+
+                <div class="pack-section">
+                    <h3>Bear Beach — Night 2</h3>
+                    <h4 class="sub">What's there</h4>
+                    <ul class="plain-list">
+                        <li>Bear-resistant food cache</li>
+                        <li>Pit toilet</li>
+                        <li>Tent pads</li>
+                        <li>Creek water source (filter first)</li>
+                    </ul>
+                    <p class="note">Three camping areas along the beach — centre sites (near Clinch Creek) are the
+                        nicest with some shade; east sites near Rosemond Creek fill up early but sit close to a small
+                        waterfall. Good sunset spot.</p>
+                </div>
+            </section>
+
+            <!-- PACKING LIST -->
+            <section id="section-packing">
+                <h2 class="section-title">Packing List</h2>
+
+                <div class="pack-section">
+                    <h3>Camping Packing List</h3>
+
+                    <h4 class="sub">Food & drink</h4>
+                    <ul class="pack-list">
+                        <li><input type="checkbox" id="pack-1-1"><label for="pack-1-1">Lunch <span class="qty">×
+                                    2</span></label></li>
+                        <li><input type="checkbox" id="pack-1-2"><label for="pack-1-2">Dinner <span class="qty">×
+                                    2</span></label></li>
+                        <li><input type="checkbox" id="pack-1-3"><label for="pack-1-3">Breakfast <span class="qty">×
+                                    2</span></label></li>
+                        <li><input type="checkbox" id="pack-1-4"><label for="pack-1-4">Snacks</label></li>
+                        <li><input type="checkbox" id="pack-1-5"><label for="pack-1-5">Chocolate (necessity)</label>
+                        </li>
+                        <li><input type="checkbox" id="pack-1-6"><label for="pack-1-6">Coffee</label></li>
+                        <li><input type="checkbox" id="pack-1-7"><label for="pack-1-7">Tea / matcha?</label></li>
+                    </ul>
+
+                    <h4 class="sub">Cooking & water</h4>
+                    <ul class="pack-list">
+                        <li><input type="checkbox" id="pack-2-1"><label for="pack-2-1">Cooking stove</label></li>
+                        <li><input type="checkbox" id="pack-2-2"><label for="pack-2-2">Cutlery</label></li>
+                        <li><input type="checkbox" id="pack-2-3"><label for="pack-2-3">Bowl / mug</label></li>
+                        <li><input type="checkbox" id="pack-2-4"><label for="pack-2-4">Water!</label></li>
+                        <li><input type="checkbox" id="pack-2-5"><label for="pack-2-5">Water filter</label></li>
+                    </ul>
+
+                    <h4 class="sub">Shelter & sleep</h4>
+                    <ul class="pack-list">
+                        <li><input type="checkbox" id="pack-3-1"><label for="pack-3-1">Tent</label></li>
+                        <li><input type="checkbox" id="pack-3-2"><label for="pack-3-2">Sleep mat</label></li>
+                        <li><input type="checkbox" id="pack-3-3"><label for="pack-3-3">Sleeping bag</label></li>
+                    </ul>
+
+                    <h4 class="sub">Clothing & gear</h4>
+                    <ul class="pack-list">
+                        <li><input type="checkbox" id="pack-4-1"><label for="pack-4-1">Waterproof jacket</label></li>
+                        <li><input type="checkbox" id="pack-4-2"><label for="pack-4-2">Hiking clothing (as you see
+                                fit)</label></li>
+                        <li><input type="checkbox" id="pack-4-3"><label for="pack-4-3">Swimsuit</label></li>
+                        <li><input type="checkbox" id="pack-4-4"><label for="pack-4-4">Towel?</label></li>
+                        <li><input type="checkbox" id="pack-4-5"><label for="pack-4-5">Hiking boots</label></li>
+                        <li><input type="checkbox" id="pack-4-6"><label for="pack-4-6">Hiking poles (both sets
+                                maybe)</label></li>
+                        <li><input type="checkbox" id="pack-4-7"><label for="pack-4-7">Knee braces</label></li>
+                    </ul>
+
+                    <h4 class="sub">Health & Safety</h4>
+                    <ul class="pack-list">
+                        <li><input type="checkbox" id="pack-5-1"><label for="pack-5-1">Bug spray</label></li>
+                        <li><input type="checkbox" id="pack-5-2"><label for="pack-5-2">Sunscreen</label></li>
+                        <li><input type="checkbox" id="pack-5-3"><label for="pack-5-3">Toothbrush & toothpaste</label>
+                        </li>
+                        <li><input type="checkbox" id="pack-5-4"><label for="pack-5-4">Blister pads, pain meds</label>
+                        </li>
+                        <li><input type="checkbox" id="pack-5-5"><label for="pack-5-5">Bear spray</label></li>
+                    </ul>
+
+                    <h4 class="sub">Gear</h4>
+                    <ul class="pack-list">
+                        <li><input type="checkbox" id="pack-6-1"><label for="pack-6-1">Backpack</label></li>
+                        <li><input type="checkbox" id="pack-6-2"><label for="pack-6-2">Headlamp</label></li>
+                        <li><input type="checkbox" id="pack-6-3"><label for="pack-6-3">Portable charger</label></li>
+                        <li><input type="checkbox" id="pack-6-4"><label for="pack-6-4">Backcountry permit</label></li>
+                        <li><input type="checkbox" id="pack-6-5"><label for="pack-6-5">Tide table (printed)</label></li>
+                        <li><input type="checkbox" id="pack-6-6"><label for="pack-6-6">Trail map (printed)</label></li>
+                    </ul>
+
+                    <h4 class="sub">For fun</h4>
+                    <ul class="pack-list">
+                        <li><input type="checkbox" id="pack-7-1"><label for="pack-7-1">Camera</label></li>
+                        <li><input type="checkbox" id="pack-7-2"><label for="pack-7-2">Journal</label></li>
+                        <li><input type="checkbox" id="pack-7-3"><label for="pack-7-3">Cards</label></li>
+                        <li><input type="checkbox" id="pack-7-4"><label for="pack-7-4">Hammock</label></li>
+                    </ul>
+                </div>
+
+                <div class="pack-section">
+                    <h3>Packing List (Off Trail)</h3>
+                    <ul class="pack-list">
+                        <li><input type="checkbox" id="pack-9-1"><label for="pack-9-1">Everyday clothes</label></li>
+                        <li><input type="checkbox" id="pack-9-2"><label for="pack-9-2">Warm layer / fleece</label></li>
+                        <li><input type="checkbox" id="pack-9-3"><label for="pack-9-3">PJs</label></li>
+                        <li><input type="checkbox" id="pack-9-4"><label for="pack-9-4">Casual shoes</label></li>
+                        <li><input type="checkbox" id="pack-10-1"><label for="pack-10-1">Aloe</label></li>
+                        <li><input type="checkbox" id="pack-11-1"><label for="pack-11-1">Book</label></li>
+                        <li><input type="checkbox" id="pack-12-1"><label for="pack-12-1">Phone + charger</label></li>
+                        <li><input type="checkbox" id="pack-12-2"><label for="pack-12-2">Cash</label></li>
+                        <li><input type="checkbox" id="pack-12-3"><label for="pack-12-3">Snacks for ferry</label></li>
+                    </ul>
+                </div>
+            </section>
+
         </div>
-        <button class="nav-link" data-jump="section-campsites">Campsites</button>
-        <button class="nav-link" data-jump="section-packing">Packing List</button>
-      </div>
-    </nav>
-
-    <div class="scroll-area">
-
-      <h1 class="page-title">summerIslandAdventure</h1>
-      <p class="page-sub">Aug 11–16, 2026</p>
-
-      <div class="ocean">
-        <video autoplay loop muted playsinline>
-          <source src="assets/C0060.MP4" type="video/mp4">
-        </video>
-        <span class="cap">Salish Sea</span>
-      </div>
-
-      <!-- LINKS -->
-      <section id="section-links">
-        <h2 class="section-title">Links</h2>
-        <div class="links-grid">
-          <div>
-            <h3>Ferry Details</h3>
-            <ul>
-              <li><a href="https://www.bcferries.com/current-conditions/TSA-SWB" target="_blank">Current conditions</a></li>
-              <li><a href="https://www.bcferries.com/routes-fares/schedules/daily/TSA-SWB" target="_blank">Schedule: Tsaw → Swartz</a></li>
-              <li><a href="https://www.bcferries.com/routes-fares/schedules/daily/SWB-TSA" target="_blank">Schedule: Swartz → Tsaw</a></li>
-              <li><a href="https://www.bcferries.com/routes-fares/schedules/daily/SWB-POB" target="_blank">Schedule: Swartz → Pender</a></li>
-              <li><a href="https://www.bcferries.com/routes-fares/schedules" target="_blank">Schedule: Pender → Tsaw</a></li>
-            </ul>
-          </div>
-          <div>
-            <h3>Trail Details</h3>
-            <ul>
-              <li><a href="https://spotwx.com/products/grib_index.php?model=gfs_pgrb2_0p25_f&lat=48.557&lon=-124.405&tz=America/Vancouver" target="_blank">Weather (SpotWX — Port Renfrew)</a></li>
-              <li><a href="https://www.tides.gc.ca/en/stations/8525" target="_blank">Tides (Port Renfrew)</a></li>
-              <li><a href="https://happiestoutdoors.ca/juan-de-fuca-trail-itinerary-and-section-by-section-overview/" target="_blank">Trail map & guide</a></li>
-              <li><a href="https://www.alltrails.com/trail/canada/british-columbia/juan-de-fuca-park" target="_blank">All trail sections (full)</a></li>
-              <li><a href="https://bcparks.ca/juan-de-fuca-park/" target="_blank">BC Parks overview</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="resources">
-          <h3>Additional Resources</h3>
-          <ul>
-            <li><a href="https://spotwx.com/products/grib_index.php?model=gfs_pgrb2_0p25_f&lat=48.382&lon=-123.728&tz=America/Vancouver" target="_blank">Weather (SpotWX — Sooke, Day 3 area)</a></li>
-            <li><a href="https://spotwx.com/products/grib_index.php?model=gfs_pgrb2_0p25_f&lat=48.78&lon=-123.31&tz=America/Vancouver" target="_blank">Weather (SpotWX — Pender Island)</a></li>
-            <li><a href="#" id="printLink">Print / save itinerary as PDF</a></li>
-            <li><a href="https://bcparks.ca/juan-de-fuca-park/" target="_blank">Trail closures & advisories — check before you go</a></li>
-          </ul>
-        </div>
-        <div class="resources">
-          <h3>Things to Print</h3>
-          <ul>
-            <li><a href="https://www.tides.gc.ca/en/stations/8525" target="_blank">Tide table (Port Renfrew)</a></li>
-            <li><a href="https://happiestoutdoors.ca/juan-de-fuca-trail-itinerary-and-section-by-section-overview/" target="_blank">Trail map</a></li>
-            <li>Backcountry camping permit confirmation</li>
-            <li><a href="#" id="printLink2">This itinerary (all pages)</a></li>
-          </ul>
-        </div>
-      </section>
-
-      <!-- ITINERARY -->
-      <section id="section-itinerary">
-        <h2 class="section-title">Itinerary</h2>
-
-        <div class="day-block" id="day-1">
-          <h3 class="day-head"><span class="label">Day 1</span><span class="leader"></span><span class="date">Aug 11</span></h3>
-          <div class="day-meta">
-            <span><b>Weather:</b> Cloudy, 30% chance of showers. High 18°C / Low 13°C <span style="color:var(--blue-light)">(Environment Canada)</span></span>
-            <span><b>Sunrise:</b> 6:02</span>
-            <span><b>Sunset:</b> 20:40</span>
-            <span><b>Low tide:</b> 06:44 (0.18m)</span>
-            <span><b>High tide:</b> 13:17 (2.40m)</span>
-            <span style="color:var(--blue-light)">Port Renfrew station</span>
-          </div>
-          <ul class="timeline">
-            <li><span class="t">5:00</span><span class="d">Wake up</span></li>
-            <li><span class="t">5:50</span><span class="d">Uber to ferry</span></li>
-            <li><span class="t">6:30</span><span class="d">Arrival at Tsawwassen terminal</span></li>
-            <li><span class="t">7:00</span><span class="d">Ferry to Swartz Bay — <a href="https://www.bcferries.com/routes-fares/schedules/daily/TSA-SWB" target="_blank">sailing schedule</a> / <a href="https://www.bcferries.com/current-conditions/TSA-SWB" target="_blank">current conditions</a></span></li>
-            <li><span class="t">8:35</span><span class="d">Arrival in Swartz Bay</span></li>
-            <li><span class="t">9:00</span><span class="d">Start drive to trailhead — <a href="https://www.google.com/maps/dir/Swartz+Bay+Ferry+Terminal/Botanical+Beach+Provincial+Park,+Port+Renfrew,+BC" target="_blank">directions</a></span></li>
-            <li><span class="t">11:00</span><span class="d">Arrive Botanical Beach trailhead (ish)</span></li>
-            <li><span class="t">12:00</span><span class="d">Start hike — <a href="https://www.alltrails.com/trail/canada/british-columbia/juan-de-fuca-marine-trail-sombrio-beach-to-botanical-beach" target="_blank">trail section map</a></span></li>
-            <li><span class="t">19:00</span><span class="d">Sombrio Beach (East) arrival — camp</span></li>
-            <li><span class="t">20:00</span><span class="d">Yummy food & sunset</span></li>
-          </ul>
-          <p class="note">19 km · biggest single climb on the trail is on this stretch (Sombrio Point / Loss Creek). No tide restrictions today.</p>
-          <div class="trail-map-slot"><img src="assets/Group%2068.svg" alt="Day 1 trail map"></div>
-        </div>
-
-        <div class="day-block" id="day-2">
-          <h3 class="day-head"><span class="label">Day 2</span><span class="leader"></span><span class="date">Aug 12</span></h3>
-          <div class="day-meta">
-            <span><b>Weather:</b> Sunny. High 19°C / Low 12°C <span style="color:var(--blue-light)">(Environment Canada)</span></span>
-            <span><b>Sunrise:</b> 6:03</span>
-            <span><b>Sunset:</b> 20:38</span>
-            <span><b>Low tide:</b> 07:27 (0.25m)</span>
-            <span><b>High tide:</b> 13:54 (2.54m)</span>
-            <span style="color:var(--blue-light)">Port Renfrew station</span>
-          </div>
-          <ul class="timeline">
-            <li><span class="t">7:15</span><span class="d">Wake up, breakfast, pack up</span></li>
-            <li><span class="t">8:15</span><span class="d">Leave Sombrio Beach — <a href="https://www.alltrails.com/trail/canada/british-columbia/juan-de-fuca-marine-trail-chin-beach-to-sombrio-beach" target="_blank">trail section map</a></span></li>
-            <li><span class="t">~11:15</span><span class="d">Pass Chin Beach tide crossings (km 21.3 / 20.6) — <a href="https://www.tides.gc.ca/en/stations/8525" target="_blank">tide table</a></span></li>
-            <li><span class="t">~13:45</span><span class="d">Hoard Creek climb (~100m, toughest single climb of the day)</span></li>
-            <li><span class="t">17:00</span><span class="d">Arrive Bear Beach camp — <a href="https://www.alltrails.com/trail/canada/british-columbia/juan-de-fuca-marine-trail-bear-beach-to-chin-beach" target="_blank">trail section map</a></span></li>
-            <li><span class="t">18:15</span><span class="d">Dinner & sunset at Bear Beach</span></li>
-          </ul>
-          <p class="note">18.4 km · hardest day, ~750m cumulative gain. Tide cutoffs (2.75m) clear comfortably all day this week — no tide reason to start earlier than this.</p>
-          <div class="trail-map-slot"><img src="assets/trail-day-2.svg" alt="Day 2 trail map"></div>
-        </div>
-
-        <div class="day-block" id="day-3">
-          <h3 class="day-head"><span class="label">Day 3</span><span class="leader"></span><span class="date">Aug 13</span></h3>
-          <div class="day-meta">
-            <span><b>Weather:</b> Sunny. High 19°C / Low 13°C <span style="color:var(--blue-light)">(Environment Canada)</span></span>
-            <span><b>Sunrise:</b> 6:04</span>
-            <span><b>Sunset:</b> 20:36</span>
-            <span><b>Low tide:</b> ~08:10 (est.)</span>
-            <span><b>High tide:</b> ~14:30 (est.)</span>
-            <span style="color:var(--blue-light)">Port Renfrew station</span>
-          </div>
-          <ul class="timeline">
-            <li><span class="t">7:30</span><span class="d">Wake up, pack up</span></li>
-            <li><span class="t">8:00</span><span class="d">Leave Bear Beach camp — <a href="https://www.alltrails.com/trail/canada/british-columbia/juan-de-fuca-marine-trail-mystic-beach-to-bear-beach" target="_blank">trail section map</a></span></li>
-            <li><span class="t">~11:00</span><span class="d">Arrive China Beach trailhead — hike finished 🎉 — <a href="https://www.google.com/maps/search/China+Beach+Trailhead,+BC" target="_blank">map</a></span></li>
-            <li><span class="t">–</span><span class="d">Picked up by mom, drive around town</span></li>
-            <li><span class="t">Afternoon</span><span class="d">Visit mom</span></li>
-            <li><span class="t">Evening</span><span class="d">Sleep at mom's — near Goldstream Campground — <a href="https://www.google.com/maps/search/Goldstream+Provincial+Park+Campground,+BC" target="_blank">map</a></span></li>
-          </ul>
-          <p class="note">9.6 km · easiest day of the three, Bear Beach cutoff (3.00m) is the highest on the trail. No fixed exit time needed anymore — go at a comfortable pace.</p>
-          <div class="day-meta" style="margin-top:10px;">
-            <span><b>China Beach → Goldstream:</b> <a href="https://www.google.com/maps/dir/China+Beach+Trailhead,+BC/Goldstream+Provincial+Park,+BC" target="_blank">directions</a></span>
-          </div>
-          <div class="trail-map-slot"><img src="assets/trail-day-3.svg" alt="Day 3 trail map"></div>
-        </div>
-
-        <div class="day-block" id="day-4">
-          <h3 class="day-head"><span class="label">Day 4</span><span class="leader"></span><span class="date">Aug 14</span></h3>
-          <div class="day-meta">
-            <span><b>Weather:</b> Mix of sun & cloud. High 25°C / Low 13°C <span style="color:var(--blue-light)">(Environment Canada — Gulf Islands)</span></span>
-            <span><b>Sunrise:</b> 6:05</span>
-            <span><b>Sunset:</b> 20:33</span>
-            <span><b>Low tide:</b> ~12:30 (est.)</span>
-            <span><b>High tide:</b> ~19:50 (est.)</span>
-            <span style="color:var(--blue-light)">Switched to Fulford Harbour station</span>
-          </div>
-          <ul class="timeline">
-            <li><span class="t">~07:30</span><span class="d">Drive from mom's (Goldstream) to Swartz Bay (~20-25 min) — <a href="https://www.google.com/maps/dir/Goldstream+Provincial+Park,+BC/Swartz+Bay+Ferry+Terminal" target="_blank">directions</a></span></li>
-            <li><span class="t">08:20</span><span class="d">ferry, Swartz Bay → Pender Island* — <a href="https://www.bcferries.com/routes-fares/schedules/daily/SWB-POB" target="_blank">sailing schedule</a> / <a href="https://www.bcferries.com/current-conditions/SWB-POB" target="_blank">current conditions</a></span></li>
-            <li><span class="t">–</span><span class="d">Arrive Pender Island, settle in</span></li>
-          </ul>
-          <p class="note">*14:35 sailing also available if the morning doesn't work out.</p>
-          <div class="trail-map-slot"><img src="assets/trail-day-4.svg" alt="Day 4 map"></div>
-        </div>
-
-        <div class="day-block" id="day-5">
-          <h3 class="day-head"><span class="label">Day 5</span><span class="leader"></span><span class="date">Aug 15</span></h3>
-          <div class="day-meta">
-            <span><b>Weather:</b> Mix of sun & cloud. High 25°C / Low N/A <span style="color:var(--blue-light)">(Environment Canada — Gulf Islands, night low not yet in range)</span></span>
-            <span><b>Sunrise:</b> 6:06</span>
-            <span><b>Sunset:</b> 20:31</span>
-            <span><b>Low tide:</b> ~13:10 (est.)</span>
-            <span><b>High tide:</b> ~20:10 (est.)</span>
-            <span style="color:var(--blue-light)">Fulford Harbour station</span>
-          </div>
-          <ul class="timeline">
-            <li><span class="t">Open</span><span class="d">Day on Pender Island</span></li>
-          </ul>
-          <div class="trail-map-slot"><img src="assets/trail-day-5.svg" alt="Day 5 map"></div>
-        </div>
-
-        <div class="day-block" id="day-6">
-          <h3 class="day-head"><span class="label">Day 6</span><span class="leader"></span><span class="date">Aug 16</span></h3>
-          <div class="day-meta">
-            <span><b>Weather:</b> outside reliable forecast window</span>
-            <span><b>Sunrise:</b> 6:08</span>
-            <span><b>Sunset:</b> 20:28</span>
-            <span><b>Low tide:</b> ~13:50 (est.)</span>
-            <span><b>High tide:</b> ~20:30 (est.)</span>
-            <span style="color:var(--blue-light)">Fulford Harbour station</span>
-          </div>
-          <ul class="timeline">
-            <li><span class="t">3:00</span><span class="d">— OR — <span class="t" style="min-width:auto;">8:00</span> (ish) return ferry, Pender Island → Tsawwassen — <a href="https://www.bcferries.com/routes-fares/schedules" target="_blank">sailing schedule (thru-fare)</a></span></li>
-            <li><span class="t">–</span><span class="d">Drive home</span></li>
-          </ul>
-          <p class="note">Pender → Tsawwassen is a thru-fare route — confirm connection details on the BC Ferries site.</p>
-          <div class="trail-map-slot"><img src="assets/trail-day-6.svg" alt="Day 6 map"></div>
-        </div>
-
-        <div class="trail-map-slot" style="margin-top:8px;"><img src="assets/trail-full.svg" alt="Full trail map"></div>
-      </section>
-
-      <!-- CAMPSITES -->
-      <section id="section-campsites">
-        <h2 class="section-title">Campsites</h2>
-
-        <div class="pack-section">
-          <h3>Sombrio Beach (East) — Night 1</h3>
-          <h4 class="sub">What's there</h4>
-          <ul class="plain-list">
-            <li>Bear-resistant food cache</li>
-            <li>Pit toilet</li>
-            <li>Tent pads</li>
-            <li>Creek water source (filter first)</li>
-          </ul>
-          <p class="note">Long classic beach with lots of tent spots. A short walk east along the beach leads to a hidden waterfall — worth checking out before settling in.</p>
-        </div>
-
-        <div class="pack-section">
-          <h3>Bear Beach — Night 2</h3>
-          <h4 class="sub">What's there</h4>
-          <ul class="plain-list">
-            <li>Bear-resistant food cache</li>
-            <li>Pit toilet</li>
-            <li>Tent pads</li>
-            <li>Creek water source (filter first)</li>
-          </ul>
-          <p class="note">Three camping areas along the beach — centre sites (near Clinch Creek) are the nicest with some shade; east sites near Rosemond Creek fill up early but sit close to a small waterfall. Good sunset spot.</p>
-        </div>
-      </section>
-
-      <!-- PACKING LIST -->
-      <section id="section-packing">
-        <h2 class="section-title">Packing List</h2>
-
-        <div class="pack-section">
-          <h3>Camping Packing List</h3>
-
-          <h4 class="sub">Food & drink</h4>
-          <ul class="pack-list">
-            <li><input type="checkbox" id="pack-1-1"><label for="pack-1-1">Lunch <span class="qty">× 2</span></label></li>
-            <li><input type="checkbox" id="pack-1-2"><label for="pack-1-2">Dinner <span class="qty">× 2</span></label></li>
-            <li><input type="checkbox" id="pack-1-3"><label for="pack-1-3">Breakfast <span class="qty">× 2</span></label></li>
-            <li><input type="checkbox" id="pack-1-4"><label for="pack-1-4">Snacks</label></li>
-            <li><input type="checkbox" id="pack-1-5"><label for="pack-1-5">Chocolate (necessity)</label></li>
-            <li><input type="checkbox" id="pack-1-6"><label for="pack-1-6">Coffee</label></li>
-            <li><input type="checkbox" id="pack-1-7"><label for="pack-1-7">Tea / matcha?</label></li>
-          </ul>
-
-          <h4 class="sub">Cooking & water</h4>
-          <ul class="pack-list">
-            <li><input type="checkbox" id="pack-2-1"><label for="pack-2-1">Cooking stove</label></li>
-            <li><input type="checkbox" id="pack-2-2"><label for="pack-2-2">Cutlery</label></li>
-            <li><input type="checkbox" id="pack-2-3"><label for="pack-2-3">Bowl / mug</label></li>
-            <li><input type="checkbox" id="pack-2-4"><label for="pack-2-4">Water!</label></li>
-            <li><input type="checkbox" id="pack-2-5"><label for="pack-2-5">Water filter</label></li>
-          </ul>
-
-          <h4 class="sub">Shelter & sleep</h4>
-          <ul class="pack-list">
-            <li><input type="checkbox" id="pack-3-1"><label for="pack-3-1">Tent</label></li>
-            <li><input type="checkbox" id="pack-3-2"><label for="pack-3-2">Sleep mat</label></li>
-            <li><input type="checkbox" id="pack-3-3"><label for="pack-3-3">Sleeping bag</label></li>
-          </ul>
-
-          <h4 class="sub">Clothing & gear</h4>
-          <ul class="pack-list">
-            <li><input type="checkbox" id="pack-4-1"><label for="pack-4-1">Waterproof jacket</label></li>
-            <li><input type="checkbox" id="pack-4-2"><label for="pack-4-2">Hiking clothing (as you see fit)</label></li>
-            <li><input type="checkbox" id="pack-4-3"><label for="pack-4-3">Swimsuit</label></li>
-            <li><input type="checkbox" id="pack-4-4"><label for="pack-4-4">Towel?</label></li>
-            <li><input type="checkbox" id="pack-4-5"><label for="pack-4-5">Hiking boots</label></li>
-            <li><input type="checkbox" id="pack-4-6"><label for="pack-4-6">Hiking poles (both sets maybe)</label></li>
-            <li><input type="checkbox" id="pack-4-7"><label for="pack-4-7">Knee braces</label></li>
-          </ul>
-
-          <h4 class="sub">Health & Safety</h4>
-          <ul class="pack-list">
-            <li><input type="checkbox" id="pack-5-1"><label for="pack-5-1">Bug spray</label></li>
-            <li><input type="checkbox" id="pack-5-2"><label for="pack-5-2">Sunscreen</label></li>
-            <li><input type="checkbox" id="pack-5-3"><label for="pack-5-3">Toothbrush & toothpaste</label></li>
-            <li><input type="checkbox" id="pack-5-4"><label for="pack-5-4">Blister pads, pain meds</label></li>
-            <li><input type="checkbox" id="pack-5-5"><label for="pack-5-5">Bear spray</label></li>
-          </ul>
-
-          <h4 class="sub">Gear</h4>
-          <ul class="pack-list">
-            <li><input type="checkbox" id="pack-6-1"><label for="pack-6-1">Backpack</label></li>
-            <li><input type="checkbox" id="pack-6-2"><label for="pack-6-2">Headlamp</label></li>
-            <li><input type="checkbox" id="pack-6-3"><label for="pack-6-3">Portable charger</label></li>
-            <li><input type="checkbox" id="pack-6-4"><label for="pack-6-4">Backcountry permit</label></li>
-            <li><input type="checkbox" id="pack-6-5"><label for="pack-6-5">Tide table (printed)</label></li>
-            <li><input type="checkbox" id="pack-6-6"><label for="pack-6-6">Trail map (printed)</label></li>
-          </ul>
-
-          <h4 class="sub">For fun</h4>
-          <ul class="pack-list">
-            <li><input type="checkbox" id="pack-7-1"><label for="pack-7-1">Camera</label></li>
-            <li><input type="checkbox" id="pack-7-2"><label for="pack-7-2">Journal</label></li>
-            <li><input type="checkbox" id="pack-7-3"><label for="pack-7-3">Cards</label></li>
-            <li><input type="checkbox" id="pack-7-4"><label for="pack-7-4">Hammock</label></li>
-          </ul>
-        </div>
-
-        <div class="pack-section">
-          <h3>Packing List (Off Trail)</h3>
-          <ul class="pack-list">
-            <li><input type="checkbox" id="pack-9-1"><label for="pack-9-1">Everyday clothes</label></li>
-            <li><input type="checkbox" id="pack-9-2"><label for="pack-9-2">Warm layer / fleece</label></li>
-            <li><input type="checkbox" id="pack-9-3"><label for="pack-9-3">PJs</label></li>
-            <li><input type="checkbox" id="pack-9-4"><label for="pack-9-4">Casual shoes</label></li>
-            <li><input type="checkbox" id="pack-10-1"><label for="pack-10-1">Aloe</label></li>
-            <li><input type="checkbox" id="pack-11-1"><label for="pack-11-1">Book</label></li>
-            <li><input type="checkbox" id="pack-12-1"><label for="pack-12-1">Phone + charger</label></li>
-            <li><input type="checkbox" id="pack-12-2"><label for="pack-12-2">Cash</label></li>
-            <li><input type="checkbox" id="pack-12-3"><label for="pack-12-3">Snacks for ferry</label></li>
-          </ul>
-        </div>
-      </section>
-
     </div>
-  </div>
 
-<script>
-  const stage1 = document.getElementById('stage1');
-  const stage2 = document.getElementById('stage2');
-  const srcFolderIcon = document.getElementById('srcFolderIcon');
-  const navFolderIcon = document.getElementById('navFolderIcon');
-  const navFolderBtn = document.getElementById('navFolderBtn');
+    <script>
+        const stage1 = document.getElementById('stage1');
+        const stage2 = document.getElementById('stage2');
+        const srcFolderIcon = document.getElementById('srcFolderIcon');
+        const navFolderIcon = document.getElementById('navFolderIcon');
+        const navFolderBtn = document.getElementById('navFolderBtn');
 
-  function flyIcon(fromEl, toEl, duration, onDone){
-    const fromRect = fromEl.getBoundingClientRect();
-    const toRect = toEl.getBoundingClientRect();
-    const flyer = document.createElement('div');
-    flyer.className = 'flying-folder';
-    flyer.innerHTML = fromEl.innerHTML;
-    document.body.appendChild(flyer);
-    flyer.style.left = fromRect.left + 'px';
-    flyer.style.top = fromRect.top + 'px';
-    flyer.style.width = fromRect.width + 'px';
-    flyer.style.height = fromRect.height + 'px';
-    flyer.style.transition = 'none';
-    flyer.getBoundingClientRect(); // force reflow
-    requestAnimationFrame(()=>{
-      flyer.style.transition = `left ${duration}ms cubic-bezier(.4,0,.2,1), top ${duration}ms cubic-bezier(.4,0,.2,1), width ${duration}ms cubic-bezier(.4,0,.2,1), height ${duration}ms cubic-bezier(.4,0,.2,1)`;
-      flyer.style.left = toRect.left + 'px';
-      flyer.style.top = toRect.top + 'px';
-      flyer.style.width = toRect.width + 'px';
-      flyer.style.height = toRect.height + 'px';
-    });
-    setTimeout(()=>{
-      flyer.remove();
-      if(onDone) onDone();
-    }, duration + 20);
-  }
+        function flyIcon(fromEl, toEl, duration, onDone) {
+            const fromRect = fromEl.getBoundingClientRect();
+            const toRect = toEl.getBoundingClientRect();
+            const flyer = document.createElement('div');
+            flyer.className = 'flying-folder';
+            flyer.innerHTML = fromEl.innerHTML;
+            document.body.appendChild(flyer);
+            flyer.style.left = fromRect.left + 'px';
+            flyer.style.top = fromRect.top + 'px';
+            flyer.style.width = fromRect.width + 'px';
+            flyer.style.height = fromRect.height + 'px';
+            flyer.style.transition = 'none';
+            flyer.getBoundingClientRect(); // force reflow
+            requestAnimationFrame(() => {
+                flyer.style.transition = `left ${duration}ms cubic-bezier(.4,0,.2,1), top ${duration}ms cubic-bezier(.4,0,.2,1), width ${duration}ms cubic-bezier(.4,0,.2,1), height ${duration}ms cubic-bezier(.4,0,.2,1)`;
+                flyer.style.left = toRect.left + 'px';
+                flyer.style.top = toRect.top + 'px';
+                flyer.style.width = toRect.width + 'px';
+                flyer.style.height = toRect.height + 'px';
+            });
+            setTimeout(() => {
+                flyer.remove();
+                if (onDone) onDone();
+            }, duration + 20);
+        }
 
-  function openFolder(){
-    flyIcon(srcFolderIcon, navFolderIcon, 550);
-    stage1.classList.add('hidden');
-    setTimeout(()=>{
-      stage2.classList.add('visible');
-      stage2.setAttribute('aria-hidden','false');
-      updateActiveNav();
-    }, 480);
-  }
+        function openFolder() {
+            flyIcon(srcFolderIcon, navFolderIcon, 550);
+            stage1.classList.add('hidden');
+            setTimeout(() => {
+                stage2.classList.add('visible');
+                stage2.setAttribute('aria-hidden', 'false');
+                updateActiveNav();
+            }, 480);
+        }
 
-  function closeFolder(){
-    stage2.classList.remove('visible');
-    stage2.setAttribute('aria-hidden','true');
-    flyIcon(navFolderIcon, srcFolderIcon, 550);
-    setTimeout(()=>{
-      stage1.classList.remove('hidden');
-    }, 480);
-  }
+        function closeFolder() {
+            stage2.classList.remove('visible');
+            stage2.setAttribute('aria-hidden', 'true');
+            flyIcon(navFolderIcon, srcFolderIcon, 550);
+            setTimeout(() => {
+                stage1.classList.remove('hidden');
+            }, 480);
+        }
 
-  stage1.addEventListener('click', openFolder);
-  stage1.addEventListener('keydown', e=>{ if(e.key==='Enter'||e.key===' '){ e.preventDefault(); openFolder(); }});
-  navFolderBtn.addEventListener('click', closeFolder);
+        stage1.addEventListener('click', openFolder);
+        stage1.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openFolder(); } });
+        navFolderBtn.addEventListener('click', closeFolder);
 
-  // nav jump links — smooth scroll within .scroll-area
-  document.querySelectorAll('[data-jump]').forEach(btn=>{
-    btn.addEventListener('click', ()=>{
-      const target = document.getElementById(btn.getAttribute('data-jump'));
-      if(target){ target.scrollIntoView({behavior:'smooth', block:'start'}); }
-    });
-  });
+        // nav jump links — smooth scroll within .scroll-area
+        document.querySelectorAll('[data-jump]').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const target = document.getElementById(btn.getAttribute('data-jump'));
+                if (target) { target.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+            });
+        });
 
-  // scroll-spy — highlight nav items as their section/day scrolls into view
-  const scrollArea = document.querySelector('.scroll-area');
-  const sectionIds = ['section-links','section-itinerary','section-campsites','section-packing'];
-  const dayIds = ['day-1','day-2','day-3','day-4','day-5','day-6'];
-  const sectionTargets = sectionIds.map(id=>({id, el: document.getElementById(id)})).filter(t=>t.el);
-  const dayTargets = dayIds.map(id=>({id, el: document.getElementById(id)})).filter(t=>t.el);
-  const navLinks = document.querySelectorAll('.nav-link');
-  const navDayLinks = document.querySelectorAll('.nav-day-link');
+        // scroll-spy — highlight nav items as their section/day scrolls into view
+        const scrollArea = document.querySelector('.scroll-area');
+        const sectionIds = ['section-links', 'section-itinerary', 'section-campsites', 'section-packing'];
+        const dayIds = ['day-1', 'day-2', 'day-3', 'day-4', 'day-5', 'day-6'];
+        const sectionTargets = sectionIds.map(id => ({ id, el: document.getElementById(id) })).filter(t => t.el);
+        const dayTargets = dayIds.map(id => ({ id, el: document.getElementById(id) })).filter(t => t.el);
+        const navLinks = document.querySelectorAll('.nav-link');
+        const navDayLinks = document.querySelectorAll('.nav-day-link');
 
-  let tickScheduled = false;
-  function updateActiveNav(){
-    tickScheduled = false;
-    const containerRect = scrollArea.getBoundingClientRect();
-    const thresholdY = containerRect.top + containerRect.height / 2;
+        let tickScheduled = false;
+        function updateActiveNav() {
+            tickScheduled = false;
+            const containerRect = scrollArea.getBoundingClientRect();
+            const thresholdY = containerRect.top + containerRect.height / 2;
 
-    let activeSection = sectionTargets[0] ? sectionTargets[0].id : null;
-    sectionTargets.forEach(t=>{
-      if(t.el.getBoundingClientRect().top <= thresholdY) activeSection = t.id;
-    });
+            let activeSection = sectionTargets[0] ? sectionTargets[0].id : null;
+            sectionTargets.forEach(t => {
+                if (t.el.getBoundingClientRect().top <= thresholdY) activeSection = t.id;
+            });
 
-    let activeDay = null;
-    if(activeSection === 'section-itinerary'){
-      dayTargets.forEach(t=>{
-        if(t.el.getBoundingClientRect().top <= thresholdY) activeDay = t.id;
-      });
-    }
+            let activeDay = null;
+            if (activeSection === 'section-itinerary') {
+                dayTargets.forEach(t => {
+                    if (t.el.getBoundingClientRect().top <= thresholdY) activeDay = t.id;
+                });
+            }
 
-    navLinks.forEach(b=>b.classList.toggle('active', b.getAttribute('data-jump') === activeSection));
-    navDayLinks.forEach(b=>b.classList.toggle('active', b.getAttribute('data-jump') === activeDay));
-  }
-  function onScroll(){
-    if(!tickScheduled){
-      tickScheduled = true;
-      requestAnimationFrame(updateActiveNav);
-    }
-  }
-  scrollArea.addEventListener('scroll', onScroll);
-  window.addEventListener('resize', onScroll);
+            navLinks.forEach(b => b.classList.toggle('active', b.getAttribute('data-jump') === activeSection));
+            navDayLinks.forEach(b => b.classList.toggle('active', b.getAttribute('data-jump') === activeDay));
+        }
+        function onScroll() {
+            if (!tickScheduled) {
+                tickScheduled = true;
+                requestAnimationFrame(updateActiveNav);
+            }
+        }
+        scrollArea.addEventListener('scroll', onScroll);
+        window.addEventListener('resize', onScroll);
 
-  document.getElementById('printLink').addEventListener('click', e=>{
-    e.preventDefault();
-    window.print();
-  });
-  document.getElementById('printLink2').addEventListener('click', e=>{
-    e.preventDefault();
-    window.print();
-  });
-</script>
+        document.getElementById('printLink').addEventListener('click', e => {
+            e.preventDefault();
+            window.print();
+        });
+        document.getElementById('printLink2').addEventListener('click', e => {
+            e.preventDefault();
+            window.print();
+        });
+    </script>
 </body>
+
 </html>
